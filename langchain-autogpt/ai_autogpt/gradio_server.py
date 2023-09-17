@@ -5,7 +5,8 @@ from autogpt import LangchainAutogpt
 from utils import LOG
 
 
-os.environ["SERPAPI_API_KEY"] = "e65622355785aba531fe0f3733c6c429e3ec43457c916a0c3006e6f81d433369"
+os.environ["SERPAPI_API_KEY"] = "5f4b61bb6543c72fc0a3a7f0a98c1c96b2192d7e"
+
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 langchainAutogpt = LangchainAutogpt()
 

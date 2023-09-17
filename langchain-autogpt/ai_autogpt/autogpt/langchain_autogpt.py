@@ -35,7 +35,7 @@ class LangchainAutogpt:
             ai_name="Jarvis",
             ai_role="Assistant",
             tools=tools,
-            llm=ChatOpenAI(),
+            llm=ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0),
             memory=self.vectorstore.as_retriever(),  # 实例化 Faiss 的 VectorStoreRetriever
         )
 
